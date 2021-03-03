@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Easy Note</string>
+    <string name="add_new_note">Add new note</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_hint">Title</string>
+    <string name="desc_hint" tools:ignore="Typography">Type something...</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/noteListFragment">
+
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="yoavsabag.easynote.ui.notelist.NoteListFragment"
+        android:label="NoteListFragment" >
+        <action
+            android:id="@+id/action_noteListFragment_to_addNewNoteFragment"
+            app:destination="@id/addNewNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewNoteFragment"
+        android:name="yoavsabag.easynote.ui.addnewnote.AddNewNoteFragment"
+        android:label="AddNewNoteFragment" >
+
+        <argument
+            android:name="noteKey"
+            app:argType="long"/>
+        <action
+            android:id="@+id/action_addNewNoteFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+    </fragment>
+
+
+</navigation>
